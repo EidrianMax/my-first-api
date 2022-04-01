@@ -1,4 +1,0 @@
-DELETE http://localhost:3001/api/notes/624331ccb0425c1cec950867
-
-### Malformed MongoId
-DELETE http://localhost:3001/api/notes/624331c9b0425c1cec95086

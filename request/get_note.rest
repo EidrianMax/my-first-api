@@ -1,4 +1,0 @@
-GET http://localhost:3001/api/notes/6242e6f52584870a457b4f7f
-
-### Malformed MongoId
-GET http://localhost:3001/api/notes/6242e6f52584870a457b4f7
