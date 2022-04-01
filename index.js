@@ -9,6 +9,8 @@ const Note = require('./models/Note')
 const handleErrors = require('./middleware/handleErrors')
 const notFound = require('./middleware/notFound')
 
+const usersRouters = require('./controllers/users')
+
 app.get('/api/notes', (req, res, next) => {
     Note.find()
         .then(notes => res.json(notes))
@@ -72,6 +74,8 @@ app.delete('/api/notes/:id', (req, res, next) => {
         })
         .catch(next)
 })
+
+app.use('/api/users', usersRouters)
 
 app.use(handleErrors)
 
