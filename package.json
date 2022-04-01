@@ -7,7 +7,7 @@
         "start": "cross-env NODE_ENV=production node index.js",
         "dev": "cross-env NODE_ENV=development nodemon index.js",
         "dev-inspect": "cross-env NODE_ENV=development nodemon --inspect index.js",
-        "test": "cross-env NODE_ENV=test jest",
+        "test": "cross-env NODE_ENV=test PORT=3002 jest tests/users-tests",
         "test-watch": "npm run test -- --watch",
         "test-inspect-watch": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --watch",
         "lint": "eslint .",
@@ -31,6 +31,7 @@
         "cors": "2.8.5",
         "dotenv": "16.0.0",
         "express": "4.17.3",
-        "mongoose": "6.2.9"
+        "mongoose": "6.2.9",
+        "mongoose-unique-validator": "3.0.0"
     }
 }
