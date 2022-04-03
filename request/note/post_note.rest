@@ -3,10 +3,10 @@ Content-Type: application/json
 
 {
     "content": "New note for api",
-    "important": true
+    "important": true,
+    "user": "6248415dcd9d51ae5f504681"
 }
 
-###
-
+### Without note
 POST http://localhost:3001/api/notes
 Content-Type: application/json
